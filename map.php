@@ -13,7 +13,7 @@
         {
             var mapProp = {
                 center:myCenter,
-                zoom:1  ,
+                zoom:2  ,
                 mapTypeId:google.maps.MapTypeId.ROADMAP
             };
 
