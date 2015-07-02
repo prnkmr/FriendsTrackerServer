@@ -69,20 +69,11 @@
 
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    <style>
-        html,body{
-            height:100%;
-            margin:0px;
-        }
-        #googleMap{
-           min-height:100%;
-        }
-    </style>
 
 </head>
 
 <body>
-<div id="googleMap" style="width:100%;"></div>
+<div id="googleMap" style="width:500px;height:380px;"></div>
 </body>
 <script type="text/javascript">
 
