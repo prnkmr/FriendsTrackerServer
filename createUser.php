@@ -10,7 +10,7 @@ if($conn){
     $conn->query($sql);
     if(!$conn->errno){
         $id=mysqli_insert_id($conn);
-        $sql="insert into lastlocation VALUES ($id,'0','0')";
+        $sql="insert into lastlocation VALUES ($id,'$username','0','0')";
         $conn->query($sql);
     }
 }else{
