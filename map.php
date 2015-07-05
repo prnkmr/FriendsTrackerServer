@@ -28,10 +28,11 @@
                 if($result){
                     while($row=$result->fetch_array()){
                     ?>
+            var titles="<?php echo $row['userid']?>";
             var marker=new google.maps.Marker({
                 position:new google.maps.LatLng(<?php echo $row['latitude'].",".$row['longitude']?>),
                 map:map,
-                labelContent:"<?php echo $row['userid']?>"
+                title: titles
 
 
             });
