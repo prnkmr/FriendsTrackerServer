@@ -28,7 +28,7 @@
                 if($result){
                     while($row=$result->fetch_array()){
                     ?>
-            var titles="<?php echo $row['userid']?>";
+            var titles="<?php echo $row['username']?>";
             var marker=new google.maps.Marker({
                 position:new google.maps.LatLng(<?php echo $row['latitude'].",".$row['longitude']?>),
                 map:map,
